@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transition</title>
+</head>
+<style>
+    body {
+        background-color: brown;
+    }
+
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: burlywood;
+        height: 100px;
+        width: 150px;
+        transition-property: all;
+    }
+
+    .box:hover {
+        font-size: large;
+        border-radius: 18px;
+        background-color: rgb(129, 143, 144);
+        height: 180px;
+        width: 200px;
+        font-family: cursive;
+        transition-duration: .2s;
+    }
+
+    #you {
+        display: flex;
+        align-items: center;
+        margin: 1px;
+        border: 2px;
+    }
+</style>
+
+<body>
+    <h4 class="heading">
+        <div class="box">This is Top Box</div>
+    </h4>
+    <div class="box">
+        This is box no 1
+    </div>
+    <div class="box" id="you">
+        Hey, This is box 2
+    </div>
+    <div class="box" id="we">
+        This is box no 3
+    </div>
+
+</body>
+
+</html>
